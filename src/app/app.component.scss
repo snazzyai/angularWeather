@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  .header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .heading-text {
+      font-size: 3rem;
+    }
+    span {
+      margin-top: 2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .search-content {
+
+    .input {
+      padding-left: 1rem;
+      width: 20rem;
+      height: 2.5rem;
+      font-size: 1rem;
+      font-weight: lighter;
+      border: none;
+      outline: none;
+    }
+    .btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      border: none;
+    }
+  }
+
+
+  .error {
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 15rem;
+    height: 3rem;
+    background: orange;
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+
+}
+
+
+
