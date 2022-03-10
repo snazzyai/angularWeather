@@ -1,0 +1,21 @@
+<div class="card-view">
+  <div class="card">
+    <div class="active"></div>
+    <div *ngIf="loadingState" class="inactive"></div>
+    <div class="top-card-view">
+      <p class="text-location">{{weatherData?.location}}</p>
+      <div class="description-view">
+        <img [src]="weatherData?.weatherImage" alt="cloud">
+        <p class="text-description">{{weatherData?.description}}</p>
+      </div>
+    </div>
+
+
+    <div class="bottom-card-view">
+      <p class="text-humidity"><span>Humidity: </span>{{weatherData?.humidity}}%rH</p>
+      <p class="text-temp"><span>Temperature: </span>{{weatherData?.temperature}}&deg;C</p>
+    </div>
+  </div>
+</div>
+
+
